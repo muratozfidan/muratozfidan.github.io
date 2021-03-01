@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> Murat Ozfidan | Attack&amp;Defence Verification Automation </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.81.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Aut0S3c">
+    
+    <link rel="stylesheet"
+          href="https://muratozfidan.github.io/css/style.min.0c643de4008adca329f7a2d616ce308cca99d4ef45e4cca307323e7857910194.css"
+          integrity="sha256-DGQ95ACK3KMp96LWFs4wjMqZ1O9F5MyjBzI&#43;eFeRAZQ="
+          crossorigin="anonymous"
+          type="text/css">
+    
+    <link rel="stylesheet"
+        href="https://muratozfidan.github.io/css/markupHighlight.min.f798cbda9aaa38f89eb38be6414bd082cfd71a6780375cbf67b6d2fb2b96491e.css"
+        integrity="sha256-95jL2pqqOPies4vmQUvQgs/XGmeAN1y/Z7bS&#43;yuWSR4="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://muratozfidan.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://muratozfidan.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://muratozfidan.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://muratozfidan.github.io/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://muratozfidan.github.io/post/attack-defence-automation/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://muratozfidan.github.io/js/anatole-header.min.0c05c0a90d28c968a1cad4fb31abd0b8e1264e788ccefed022ae1d3b6f627514.js"
+            integrity="sha256-DAXAqQ0oyWihytT7MavQuOEmTniMzv7QIq4dO29idRQ="
+            crossorigin="anonymous"></script>
+
+
+    
+        
+        
+        <script type="text/javascript"
+                src="https://muratozfidan.github.io/js/anatole-theme-switcher.min.8ef71e0fd43f21a303733dbbecae5438b791d2b826c68a9883bd7aa459a076d2.js"
+                integrity="sha256-jvceD9Q/IaMDcz277K5UOLeR0rgmxoqYg716pFmgdtI="
+                crossorigin="anonymous"></script>
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://muratozfidan.github.io/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="Attack&amp;Defence Verification Automation"/>
+<meta name="twitter:description" content="Increase Your Security Maturity"/>
+
+
+    
+    <meta property="og:title" content="Attack&amp;Defence Verification Automation" />
+<meta property="og:description" content="Increase Your Security Maturity" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://muratozfidan.github.io/post/attack-defence-automation/" /><meta property="og:image" content="https://muratozfidan.github.io/images/site-feature-image.png"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-03-01T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-03-01T00:00:00&#43;00:00" /><meta property="og:site_name" content="Murat Ozfidan" />
+
+
+</head>
+<body><div class="sidebar animated fadeInDown ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://muratozfidan.github.io/images/rocky-balboa-bloody.jpg" alt="profile picture">
+            <h3 title=""><a href="/">Murat Ozfidan</a></h3>
+            <div class="description">
+                <p>Aut0S3c</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://www.linkedin.com/in/muratozfidan/" rel="me" aria-label="Linkedin">
+                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://github.com/muratozfidan" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:murat.ozfidan.92@gmail.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Murat Ozfidan  2021 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  animated fadeInDown ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+            
+            <li><a 
+                   href="/contact/"
+                        
+                   title="">Contact</a></li>
+        
+        
+        
+            <li class="theme-switch-item">
+                <a class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            
+            <div class="post-title">
+                <h3>Attack&amp;Defence Verification Automation</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date"> Mon, Mar 1, 2021 
+                                           </span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">6-minute read</span>
+                    </div>
+                
+            </div>
+
+            <blockquote>
+<p><strong>How is attack&amp;defense simulation automation done?</strong> <br>
+<strong>Verify and control your Security and SOC teams 24/7.</strong> <br>
+<strong>This attack was previously blocked in this X product, how is it now?</strong> <br>
+<strong>How can I see the blocking and preventation status of t0 or new vulnerability in my products?</strong> <br>
+<strong>Isn&rsquo;t enough our security products or the tens of millions of dollars we&rsquo;ve spent?</strong> <br>
+&hellip;</p>
+</blockquote>
+<p>Every day,  new vulnerabilities are published, new attack types are detected and sometimes variants are changing, somewhere getting hacked and the above questions come to mind.<br>
+Consequently they don&rsquo;t stop on 2 sides, they shouldn&rsquo;t stop, they can&rsquo;t stop!</p>
+<p>Let’s start with basic parameters.</p>
+<p>Everyone knows <strong>MITRE ATT&amp;CK</strong>. While MITRE alone is not enough for security operations, it is the perfect and best framework. I will not talk about this any more because you can find thousands of documents on the internet.</p>
+<p>What I explained above was a big problem for us as it is for every company and everyone. Although I do not like to talk about products, I think it will be useful to explain some technologies I use in this article.</p>
+<p> </p>
+<h4 id="soarsecurity-orchestration-automation-and-response-platform">SOAR(Security Orchestration, Automation and Response Platform):</h4>
+<p>XSOAR, formerly Demisto, is the best product I&rsquo;ve seen in this area. There is a lot of talk about soar technology, but since it is not the purpose of this article, I will save it for later articles.<br>
+<strong>Links:</strong>
+<a href="https://www.paloaltonetworks.com/cortex/xsoar">https://www.paloaltonetworks.com/cortex/xsoar</a><br>
+<a href="https://xsoar.pan.dev/">https://xsoar.pan.dev/</a></p>
+<p> </p>
+<h4 id="bascontinuous-breach-and-attack-simulation">BAS(Continuous Breach and Attack Simulation):</h4>
+<p>PICUS is a product that is among the leaders in this topic. The only thing missing with customized attack scenario, and seems to have added in the last major patch they released this shortcoming.<br>
+<strong>Links:</strong>  <a href="https://www.picussecurity.com/">https://www.picussecurity.com/</a><br>
+ </p>
+<p>For a secure structure, XDR-Network &amp; Endpoint &amp; Mail-, NDR, EP, IPS, SIEM, Sandbox etc. many products such as are required. (They should be used correctly and in the best way!) I took care to use almost all the technologies I have mentioned in this article.</p>
+<blockquote>
+<p><strong>Is it possible to keep up with this much product, technology and development?</strong></p>
+<blockquote>
+<p>It isn&rsquo;t, especially in a world with human, budget and countless inadequacies!</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>So what should we do?</strong></p>
+<blockquote>
+<p>Of course, you have to develop automation about it</p>
+</blockquote>
+</blockquote>
+<p> </p>
+<h4 id="goals">Goals:</h4>
+<p>I wanted to simulate continuous attacks between my peers (hosts), check and verify security controls and products, assess security maturity, score your defense mechanism, and automate this whole process from end to end.
+ </p>
+<h4 id="steps">Steps:</h4>
+<p>SOAR and BAS solution integration
+Playbook that include Manuel and automatic tasks
+Evaulate your defence maturity
+Automate your attack framework and simulate every time
+Lesson learn and increase your security maturity
+ </p>
+<h4 id="integration">Integration</h4>
+<p>To solve the above problems, I developed the integrations between picus and XSOAR product and created a playbook with automations and manual controls.
+The integration has been approved by Palo Alto and you can now actively use it on the XSOAR product.</p>
+<p>To access the integration code outside of Palo Alto:<br>
+<a href="https://github.com/muratozfidan/XSOAR-PICUS/tree/main/PICUS/Integration">https://github.com/muratozfidan/XSOAR-PICUS/tree/main/PICUS/Integration</a></p>
+<p><img src="../images/xsoar-picus/PicusGenerateInstance.png" alt="Integration" title="Integration"></p>
+<p> 
+Enter the PICUS Management IP address in the IP part of the image. You can complete the integration by entering the API Token that it has produced in the following order on PICUS. If you do not have an SSL certificate on PICUS Management, you can check the &ldquo;Trust any certificate&rdquo; option. (Suggestion)</p>
+<p><strong>For create API Token:</strong></p>
+<blockquote>
+<p>http(s)://YourPICUSURL/settings ==&gt; Advanced ==&gt; Create API TOKEN</p>
+</blockquote>
+<p>This integration includes 12 basic commands that will be useful in automations.
+For Example:
+Picus-single-attack: You can run a attack between specific peer with this command.
+Picus-specific-threats-results: You can get an attack results with this command.</p>
+<p> </p>
+<h4 id="playbook">Playbook:</h4>
+<p>Now we can go into our playbook details.<br>
+Link: <a href="https://github.com/muratozfidan/XSOAR-PICUS/tree/main/PICUS/Playbook">https://github.com/muratozfidan/XSOAR-PICUS/tree/main/PICUS/Playbook</a><br>
+<img src="../images/xsoar-picus/PICUS-Attack&amp;Defence-Validation.png" alt="Playbook" title="Playbook"></p>
+<p> 
+Playbook is based on <strong>6</strong> basic categories.</p>
+<ol>
+<li>Preparation</li>
+<li>Attack(Weaponization)</li>
+<li>Analysis</li>
+<li>Preventation</li>
+<li>Detection</li>
+<li>Mitigation&amp;Remedition</li>
+</ol>
+<p>I know that there is no respond from incident response stages, but the purpose in this playbook is to measure awareness with automation and increase maturity.</p>
+<p> </p>
+<h2 id="1preparation">1.Preparation</h2>
+<p>You must first determine the attack you will play, decide between which peers (called as vector) you will play it, and have the technical details of the attack to use in the analysis phase. The attack you will play in this phase may be a newly published vulnerability in the exploit code, malware or a technique that hits the MITRE mapping. No matter what(red or blue team) you must know all the vectors of the attack. (Knowledge is everything!)</p>
+<blockquote>
+<p>Note: Network segmentation is important! (What network layers and security products will the attack take place?)</p>
+</blockquote>
+<p><img src="../images/xsoar-picus/PicusPlaybook1.png" alt="Attack" title="Attack"><br>
+<img src="../images/xsoar-picus/PicusPlaybook2.png" alt="AttackDefence" title="AttackDefence"></p>
+<p><img src="../images/xsoar-picus/PicusPlaybook6.png" alt="Preparation" title="Preparation"></p>
+<p> </p>
+<h2 id="2attackweaponization">2.Attack(Weaponization)</h2>
+<p>You can initiate the attack you selected in the previous flow for all vectors you previously specified (created) or a custom vector. (schedule)</p>
+<p><img src="../images/xsoar-picus/PicusPlaybook4.png" alt="Weaponization" title="Weaponization"></p>
+<p> </p>
+<h2 id="3analysis">3.Analysis</h2>
+<p>At this stage, you should get the results of the attack, check whether there is an existing SIGMA and YARA rule (if not, start creating immediately!) And investigate the necessary security measures or you can get them from PICUS(Automatic).<br>
+For SIGMA Rule Standards:<br>
+<a href="https://www.nextron-systems.com/2018/02/10/write-sigma-rules/">https://www.nextron-systems.com/2018/02/10/write-sigma-rules/</a></p>
+<p>For YARA Rule Standards:
+<a href="https://yara.readthedocs.io/en/latest/writingrules.html">https://yara.readthedocs.io/en/latest/writingrules.html</a></p>
+<p><img src="../images/xsoar-picus/PicusPlaybook3.png" alt="Analysis" title="Analysis"></p>
+<p> </p>
+<h2 id="4preventation">4.Preventation</h2>
+<p>In this phase, you must detect which security products the attack has passed (failed) (PICUS automatically gives these results) and start the relevant flow to edit the necessary signatures and configurations, if exists.
+It is not a success to prevent an attack in a single security product, It indicates that the relevant security product is doing the job (not others) but it does not mean that the security measures are sufficient. That&rsquo;s why you should try every attack in all network segments as much as possible.</p>
+<p><img src="../images/xsoar-picus/PicusPlaybook5.png" alt="Preventation" title="Preventation"></p>
+<p> </p>
+<h2 id="5detection">5.Detection</h2>
+<p>Whether an attack has passed or not will not be enough for someone who considers every step of security. Therefore, you should examine the logs of the attack, check that an alarm was triggered from the logs, and if they do not exist, start the defence process. (Another flow)
+If you have detected it, you should examine variants of these and similar attacks and start threat hunting!</p>
+<p><img src="../images/xsoar-picus/PicusPlaybook8.png" alt="Detection" title="Detection"></p>
+<p> </p>
+<h2 id="6mitigationremedition">6.Mitigation&amp;Remedition</h2>
+<p>At the last stage, you should start configuring the results of the attack. You can use your own problem and project tracking software for this. In SIEM, you can create a warning about this and have the Hunters take care of it.<br>
+Finally you have to evaluate and score your security maturity. The following project(DeTTECT) on how to do this can be a good reference for you.<br>
+<a href="https://github.com/rabobank-cdc/DeTTECT">https://github.com/rabobank-cdc/DeTTECT</a><br>
+<a href="https://mitre-attack.github.io/attack-navigator/">https://mitre-attack.github.io/attack-navigator/</a></p>
+<p><img src="../images/xsoar-picus/PicusPlaybook7.png" alt="Mitigation" title="Mitigation"></p>
+<p> </p>
+<h4 id="jira-task">Jira Task:</h4>
+<p><img src="../images/xsoar-picus/PicusPlaybook9.png" alt="JiraTask" title="JiraTask"></p>
+<p> </p>
+<h4 id="mitre-navigator">MITRE Navigator:</h4>
+<p><img src="../images/xsoar-picus/mitrenavigator.png" alt="Navigator" title="Navigator"></p>
+<p> </p>
+<h3 id="consequence">Consequence:</h3>
+<p>There are tens, maybe hundreds of technical details to talk about on this subject. The main purpose of this article was to automate what we do manually in security processes and show how best practices can be applied in real life.</p>
+<p>If you want to set up your own lab environment as an alternative(free) to the technologies I used in the article:</p>
+<ol>
+<li><strong>SIEM:</strong>
+<ul>
+<li>ELK</li>
+<li>Splunk</li>
+</ul>
+</li>
+<li><strong>Attack Tool:</strong>
+<ul>
+<li>Atomic Red Team</li>
+<li>Calderra</li>
+<li>Mordor Project</li>
+</ul>
+</li>
+<li><strong>SOAR:</strong>
+<ul>
+<li>XSOAR</li>
+<li>Hive</li>
+</ul>
+</li>
+</ol>
+<p>Of course, my suggestion for those who want to go deeper:
+Set 6 servers, the first is in the external system (1), the second is in the DMZ (1), the third is in the Server segment (2) and the fourth is in the Client segment (2).
+suggested vectors:</p>
+<blockquote>
+<ol>
+<li>External - DMZ</li>
+<li>External - Internal Server</li>
+<li>Server - Server</li>
+<li>Client - Server</li>
+<li>Client - Client</li>
+</ol>
+</blockquote>
+<p>Complete the sysmon and auditd configuration on all servers.
+Position ELK or Splunk (Internal). Of course, Zeek
+Create your attacks.
+Write your automation code!</p>
+<blockquote>
+<p>Also, if you want to improve your MITRE skills, you can take a look at the training offered by PICUS academy.</p>
+<blockquote>
+<p><a href="https://academy.picussecurity.com/home">https://academy.picussecurity.com/home</a></p>
+</blockquote>
+</blockquote>
+<p> </p>
+<h5 id="references">References:</h5>
+<p><a href="https://github.com/muratozfidan/XSOAR-PICUS/tree/main/PICUS/Integration">https://github.com/muratozfidan/XSOAR-PICUS/tree/main/PICUS/Integration</a><br>
+<a href="https://www.paloaltonetworks.com/cortex/xsoar">https://www.paloaltonetworks.com/cortex/xsoar</a><br>
+<a href="https://www.picussecurity.com/">https://www.picussecurity.com/</a><br>
+<a href="https://www.nextron-systems.com/2018/02/10/write-sigma-rules/">https://www.nextron-systems.com/2018/02/10/write-sigma-rules/</a><br>
+<a href="https://yara.readthedocs.io/en/latest/writingrules.html">https://yara.readthedocs.io/en/latest/writingrules.html</a><br>
+<a href="https://github.com/rabobank-cdc/DeTTECT">https://github.com/rabobank-cdc/DeTTECT</a><br>
+<a href="https://mitre-attack.github.io/attack-navigator/">https://mitre-attack.github.io/attack-navigator/</a><br>
+<a href="https://attack.mitre.org/">https://attack.mitre.org/</a><br>
+<a href="https://thehive-project.org/">https://thehive-project.org/</a><br>
+<a href="https://atomicredteam.io/">https://atomicredteam.io/</a><br>
+<a href="https://github.com/redcanaryco/atomic-red-team">https://github.com/redcanaryco/atomic-red-team</a><br>
+<a href="https://github.com/mitre/caldera">https://github.com/mitre/caldera</a><br>
+<a href="https://mordordatasets.com/introduction.html">https://mordordatasets.com/introduction.html</a><br>
+<a href="https://github.com/OTRF/mordor">https://github.com/OTRF/mordor</a></p>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                
+                
+            </div>
+        </div>
+
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://muratozfidan.github.io/js/jquery.min.64d0083866906099f942140bc1c5cba4b1bf65783c52e4a63c5c46bf9dbc41f4.js"
+        integrity="sha256-ZNAIOGaQYJn5QhQLwcXLpLG/ZXg8UuSmPFxGv528QfQ="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://muratozfidan.github.io/js/bundle.min.45159b0e20ba3878972e064b7edc464c31a9e35a0d0a6a71e3fec84efdbe2ea5.js"
+        integrity="sha256-RRWbDiC6OHiXLgZLftxGTDGp41oNCmpx4/7ITv2&#43;LqU="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://muratozfidan.github.io/js/medium-zoom.min.2d6fd0be87fa98f0c9b4dc2536b312bbca48757f584f6ea1f394abc9bcc38fbc.js"
+        integrity="sha256-LW/Qvof6mPDJtNwlNrMSu8pIdX9YT26h85SrybzDj7w="
+        crossorigin="anonymous"></script>
+<link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+              integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/&#43;DiW/UqRcLbRjq"
+              crossorigin="anonymous"><script defer
+                src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+                integrity="sha384-y23I5Q6l&#43;B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd&#43;qj&#43;o24G5ZU2zJz"
+                crossorigin="anonymous"></script><script defer
+                src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+                integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI"
+                crossorigin="anonymous"
+                onload="renderMathInElement(document.body);"></script></body>
+
+</html>
